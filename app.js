@@ -18,10 +18,11 @@ for(let i = 0; i < 500; i++) {
     ]);
 }
 
+//Inserting the generated data into database
 //Variable to store query
-const q = "SELECT 4 + 1";
+const q = 'INSERT INTO users(email, created_at) VALUES ?';
 //Method for querying the database and end closing the connection
-connection.query(q, (error, results, fields) => {
+connection.query(q, [data], (error, results, fields) => {
     if (error) throw error;
     console.log(results);
 });
