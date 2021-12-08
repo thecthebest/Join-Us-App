@@ -9,6 +9,15 @@ const connection = mysql.createConnection({
     database: 'mysql'
 });
 
+//inserting fake data 500 times
+const data = [];
+for(let i = 0; i < 500; i++) {
+    data.push([
+        faker.internet.email(),
+        faker.date.past()
+    ]);
+}
+
 //Variable to store query
 const q = "SELECT 4 + 1";
 //Method for querying the database and end closing the connection
