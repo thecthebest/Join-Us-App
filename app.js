@@ -8,3 +8,11 @@ const connection = mysql.createConnection({
     user: 'root',
     database: 'mysql'
 });
+
+//Variable to store query
+const q = "SELECT 4 + 1";
+//Method for querying the database and end closing the connection
+connection.query(q, (error, results, fields) => {
+    if (error) throw error;
+    console.log(results);
+});
