@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/thecthebest/Join-Us-App/issues"
   },
-  "homepage": "https://github.com/thecthebest/Join-Us-App#readme"
+  "homepage": "https://github.com/thecthebest/Join-Us-App#readme",
+  "dependencies": {
+    "faker": "^5.5.3"
+  }
 }
